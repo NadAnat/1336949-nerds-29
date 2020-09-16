@@ -3,124 +3,137 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap">
+  <link href="normalize.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
 
-<header>
-  <nav>
-    <a> 
+<header class="main-header">
+  <nav class="main-navigation">
+    <a class="main-header logo"> 
 	  <img src="http://via.placeholder.com/150x100" alt="slide1 phones">
-	  <img src="img/index-logo.svg" width="40" height="20" alt="Logo Nёrd's">
-	  </a>
-    <ul>
+	  <img src="img/index-logo.svg" width="40" height="20" alt="Logo Nerds">
+	</a>
+    <ul class="site-navigation">
       <li><a href="blank.html">Студия</a></li>
       <li><a href="blank.html">Клиенты</a></li>
       <li><a href="catalog.html">Магазин</a></li>
       <li><a href="blank.html">Контакты</a></li>
     </ul>
-    <a href="blank.html">Корзина</a>
+    <a class="login-link" href="blank.html">Корзина</a>
   </nav>
 </header>
 
-<main>
+<main class="container">
 
-  <h1>Долго, дорого, 
-  скрупулезно.</h1>
-  <p>Математически выверенный дизайн,
-для вашего сайта или мобильного приложения.</p>
-  <a href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
+ <!--<h1 class="visually-hidden">Интернет магазин «Nerds»</h1>-->
+  <h2>Долго, дорого,  скрупулезно.</h2>
+   <p>Математически выверенный дизайн, для вашего сайта или мобильного приложения.</p>
+    <a class="button-red" href="blank.html">УЗНАТЬ БОЛЬШЕ</a>
 
-<section>
-  <ul>
-      <li> <a><img src="http://via.placeholder.com/150x100" alt="Pic web site"></a>
-        <h2>ВЕБ-САЙТЫ</h2>
-        <p>Мир никогда не будет прежним 
-         после того как увидит ваш сайт!</p>
-        <a href="blank.html">ЗАКАЗАТЬ</a>
+  <section class="services"> <!--features-->
+   <!--<h2 class="visually-hidden">Услуги</h2>-->
+     <ul class="services-list">
+      <li class="services-item"> <a><img src="http://via.placeholder.com/150x100" alt="Pic web site"></a>
+        <h3>ВЕБ-САЙТЫ</h3>
+        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <a class="button-red" href="blank.html">ЗАКАЗАТЬ</a>
       </li>
-      <li><a><img src="http://via.placeholder.com/150x100" alt="Pic application"></a>
-        <h2>ПРИЛОЖЕНИЯ</h2>
-        <p>Покорите топ-10 приложений в 
-          AppStore и Google Play </p>
-        <a href="blank.html">ЗАКАЗАТЬ</a>
+      <li class="services-item"><a><img src="http://via.placeholder.com/150x100" alt="Pic application"></a>
+        <h3>ПРИЛОЖЕНИЯ</h3>
+        <p>Покорите топ-10 приложений в AppStore и Google Play </p>
+        <a class="button-green" href="blank.html">ЗАКАЗАТЬ</a>
       </li>
-      <li><a><img src="http://via.placeholder.com/150x100" alt="Pic presentation"></a>
-        <h2>ПРЕЗЕНТАЦИИ</h2>
-        <p>Вы даже не подозреваете,
-        насколько вы изумительны!</p>
-        <a href="blank.html">ЗАКАЗАТЬ</a>
+      <li class="services-item"><a><img src="http://via.placeholder.com/150x100" alt="Pic presentation"></a>
+        <h3>ПРЕЗЕНТАЦИИ</h3>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        <a class="button-yellow" href="blank.html">ЗАКАЗАТЬ</a>
       </li>
-  </ul>
-</section>
-<section>
-        <h3>Мы — маленькая, но гордая
-    дизайн-студия из Краснодара.</h3>
-    <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-	превыше креатива. Работаем не покладая рук, как роботы.</p>
-
+      </ul>
+   </section>
+   <div class="index-columns">
+   <section class="about"> <!--news-->
+     <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
       <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
-    <ul>
-          <li><p>Веб-сайтов любой сложности</p>
+    <ul class="about-list">
+          <li class="about-item">
+		    <p>Веб-сайтов любой сложности</p>
           </li>
-          <li><p>Мобильных приложений для iOS и Android</p>
+          <li class="about-item">
+		    <p>Мобильных приложений для iOS и Android</p>
           </li>
-          <li><p>Слайдшоу и видео для корпоративных презентаций</p>
+          <li class="about-item">
+		    <p>Слайдшоу и видео для корпоративных презентаций</p>
           </li>
     </ul>
-</section>
+    </section>
 
-<section>
-      <figure>
+  <section class="features"> <!--gallery-->
+      <figure class="features-content">
               <a><img src="http://via.placeholder.com/150x100" alt="Logo Nёrd's"></a>
       </figure>
-      <h4>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h4>
-      <dl>
+      <h3>С 2004 ГОДА ЛЮБИМ ТОЧНОСТЬ ВО ВСЕМ:</h3>
+	  <dl>
         <dt>146%</dt>
-          <dd>Уровень
-            самоотдачи</dd>
+          <dd>Уровень самоотдачи</dd>
         <dt>100%</dt>
-          <dd>Соблюдение  
-                сроков</dd>
+          <dd>Соблюдение сроков</dd>
         <dt>50%</dt>
-           <dd>Минимальная
-              предоплата</dd>
+           <dd>Минимальная предоплата</dd>
       </dl>
-
-</section>
 	  
-<section>
-<h5>Наши партнеры</h5>
-	<ul>
-      <li><a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-	  <li><a href="blank.html">"Барбершоп BORODINSKI"</a></li>
-      <li><a href="blank.html">"PINK"</a></li>
-      <li><a href="blank.html">"MISHKA"</a></li>
+  <!-- <table>
+      <tr>   
+        <td>146%</td>             
+        <td>100%</td>    
+        <td>50%</td> 
+      </tr>
+      <tr>   
+        <td>Уровень самоотдачи</td>             
+        <td>Соблюдение сроков</td>    
+        <td>Минимальная предоплата</td> 
+      </tr>
+    </table> -->
+	   </section>
+   </div>
+	<section class="partners">
+<!--<p class="visually-hidden">Наши партнеры</p>-->
+	<ul class="partners-list">
+      <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+	  <li class="partners-item"><a href="blank.html">"Барбершоп BORODINSKI"</a></li>
+      <li class="partners-item"><a href="blank.html">"PINK"</a></li>
+      <li class="partners-item"><a href="blank.html">"MISHKA"</a></li>
     </ul>
 </section>
 
 </main>
-<footer>
-<section>
+<footer class="page-footer main-footer">
+<section class="footer-contacts">
    <figure>
        <a><img src="http://via.placeholder.com/150x100" alt="Map"></a>
 	   <!-- Здесь будет карта -->
    </figure>
-    <h5>NЁRDS DESIGN STUDIO</h5>
-    <p> 191186, Санкт-Петербург,
+    <h2>NЁRDS DESIGN STUDIO</h2>
+    <p class="address"> 191186, Санкт-Петербург,
 	   ул. Б. Конюшенная, д. 19/8
-	   тел. +7 (812) 275-75-75</p>
-    <a href="blank.html">НАПИШИТЕ НАМ</a>
+	   тел. <a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a></p>
+    <a class="button-red" href="blank.html">НАПИШИТЕ НАМ</a>
 </section>
-<section>
+<section class="footer-social">
 	<ul>
-      <li><a href="#">Вконтакте</a></li>
-      <li><a href="#">Фейсбук</a></li>
-      <li><a href="#">Инстаграм</a></li>
+      <li><a class="social-button" href="#">Вконтакте</a></li>
+      <li><a class="social-button" href="#">Фейсбук</a></li>
+      <li><a class="social-button" href="#">Инстаграм</a></li>
     </ul>
-    <h6>Давайте дружить, это выгодно!</h6>
-    <p>Скидка 10% для друзей из социальных сетей.</p>
+    <p><b>Давайте дружить, это выгодно!</b></p>
+    <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
 </section>
 </footer>
 </body>
 </html>
+
+  
+  
