@@ -172,6 +172,16 @@ img {
 .contacts-phone {
   color: inherit;
 }
+/* Partners */
+.partners {
+  background: url(logo-2.png);
+  background: url(logo-3.png);
+  background: url(logo-4.png);
+}
+.partners-list {
+  list-style: none;
+}
+
 /* Main footer */
 
 .main-footer {
