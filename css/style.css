@@ -1,0 +1,231 @@
+  /* Variables */
+
+:root {
+  --basic-red-light: #FB565A;
+  --basic-red: #E74246;
+  --basic-red-dark: #D7373B; 
+
+  --basic-green-light: #00CA74;
+  --basic-green: #00BC6C;
+  --basic-green-dark: #00AA62;
+
+  --basic-yellow-light: #EFC84A;
+  --basic-yellow: #EAB534;
+  --basic-yellow-dark: #E5A722;
+
+  --basic-grey: #EEEEEE;
+  --basic-grey-dark:#666666;
+  --basic-extra-grey: #444444;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-black-light: #283136;
+
+  }
+  /* Global */
+
+body {
+  min-width: 1158px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black-light);
+  text-transform: uppercase;
+  background-color: var(-basic-grey);
+  background-image: url(nerds-index-slide1.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* Main navigation */
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-grey);
+}
+.site-navigation {
+  list-style: none;
+}
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-black);
+}
+
+/* User navigation */
+
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: var(--basic-grey);
+}
+/* Services */
+
+.services-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+/* Index columns */
+
+.index-columns {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  /* background-image: url(nerds-illustration.png);*/
+  background-position: center, 0 0;
+  background-repeat: no-repeat, repeat;
+}
+
+.index-columns h3 {
+  font-size: 45px;
+  line-height: 45px;
+}
+/* About */
+
+.about-list {
+  list-style: none;
+}
+/* Features */
+
+.features-content {
+  background: url(nerds-illustration.png);
+  background-color: var(--basic-white);
+}
+/* Button */
+
+.button-red {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-red-light);
+  border: none;
+  border-radius: 3px;
+}
+.button-green {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-green-light);
+  border: none;
+  border-radius: 3px;
+}
+.button-yellow {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: var(--basic-yellow-light);
+  border: none;
+  border-radius: 3px;
+}
+.button-red:focus {
+  background-color: var(---basic-red);
+}
+.button-green:focus {
+  background-color: var(---basic-green);
+}
+.button-yellow:focus {
+  background-color: var(---basic-yellow);
+}
+.button-red:active {
+  background-color: var(--basic-red-dark);
+}
+.button-green:active {
+  background-color: var(--basic-green-dark);
+}
+.button-yellow:active {
+  background-color: var(--basic-yellow-dark);
+}
+/* Contacts */
+
+.contacts-phone {
+  color: inherit;
+}
+/* Partners */
+.partners {
+  background: url(logo-2.png);
+  background: url(logo-3.png);
+  background: url(logo-4.png);
+}
+.partners-list {
+  list-style: none;
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-image: url(map.jpg);
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+.address {
+  color: var(--basic-grey-dark);
+  font-size: 16px;
+  line-height: 18px; 
+}
+.discount {
+  color: var(--basic-extra-grey);
+  font-size: 16px;
+  line-height: 22px;
+}
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+
+/* Social button */
+
+.social-button {
+
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
+}
+
+.social-button:hover {
+  background: linear-gradient(0deg, #E74246, #E74246), #FFFFFF;
+}
+  
+.social-button:active {
+  background: linear-gradient(0deg, #D7373B, #D7373B), #FFFFFF;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+
+
+
