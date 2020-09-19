@@ -119,6 +119,14 @@ img {
 }
 /* Button */
 
+.services-item {
+  background: url(illustration-1.png);
+  background: url(illustration-2.png);
+  background: url(illustration-3.png);
+  background-color: var(--basic-white);
+}
+
+
 .button-red {
   font: inherit;
   text-align: center;
@@ -187,7 +195,8 @@ img {
 .main-footer {
   color: var(--basic-black);
   background-color: var(--basic-white);
-  background-image: url(map.jpg);
+  background-image: url(map.png);
+  background-image: url(map-marker.png); /* не похож этот маркер на  background!*/
   background-position: 0 0;
   background-repeat: repeat;
 }
