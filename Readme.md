@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Надежда Бейдо](https://up.htmlacademy.ru/htmlcss/29/user/1336949).
-* Наставник: `Александр Румянцев`.
+* Наставник: `Виктор Гирда`(https://htmlacademy.ru/profile/viktorgirda)
 
 ---
 
