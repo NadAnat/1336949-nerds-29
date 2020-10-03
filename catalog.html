@@ -1,172 +1,263 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="utf-8">
   <title> Каталог Нёрдс</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-  <link href="normalize.css" rel="stylesheet">
-  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700;display=swap">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body inner-page">
 
-<header class="main-header">
-  <nav class="main-navigation container">
-    <a class="main-header-logo"> <!--"Path"???-->
-	  <img src="img/index-logo.svg" width="40" height="20" alt="Logo Nerds"> <!-- нет такого логотипа на рисунке-->>
-	</a>
-    <ul class="site-navigation">
-      <li><a href="blank.html">Студия</a></li>
-      <li><a href="blank.html">Клиенты</a></li>
-      <li><a href="catalog.html">Магазин</a></li>
-      <li><a href="blank.html">Контакты</a></li>
-    </ul>
-    <a class="login-link" href="blank.html">Корзина</a>
-  </nav>
-</header>
+<body class="page-body">
+  <div class="wrapper">
+    <header class="header container">
 
-<main class="page-catalog container">
+      <a class="main-header-logo" href="#">
+        <img class="main-header-logo" src="img/nerds-logo.png" width="160" height="60" alt="LogoNerds">
+      </a>
+      <nav class="main-nav">
+        <a class="nav-link" href="#">Студия</a>
+        <a class="nav-link" href="#">Клиенты</a>
+        <a class="nav-link" href="catalog.html">Магазин</a>
+        <a class="nav-link" href="#">Контакты</a>
+      </nav>
+      <img class="basket-shape" src="img/Shape.svg" width="15" height="11" alt="">
+      <a class="basket-link" href="#">Корзина</a>
+    </header>
 
-  <h1 class="page-title">Магазин готовых шаблонов</h1>
-  <ul>
-    <li class="page-title-middle">СТОИМОСТЬ:</li>
-    <li class="page-title-middle">СОРТИРОВАТЬ:</li>
-    <li class="page-title-middle">ПО ЦЕНЕ</li>
-    <li class="page-title-middle">ПО ТИПУ</li>
-    <li class="page-title-middle"> ПО НАЗВАНИЮ</li>
+    <main class="main-container ">
 
-    <!-- Здесь будет форма сортировки услуг -->
-  </ul>
 
-  <section>
-    <h2 class="page-title-middle">СЕТКА:</h2>
-    <ul>
-      <li>
-        <label>
-          <input type="radio" name="one" value="b" checked >Адаптивная
-        </label>
-      </li>
-      <li>      
-        <label>
-        <input type="radio" name="question-one" value="p">Фиксированная 
-      </label>
-      </li>
-      <li>
-      <label>
-        <input type="radio" name="question-one" value="p">Резиновая 
-      </label>
-      </li>
-                
-    </ul>
+      <div class="catalog-title">
+        <div>
+          <img class="line-red" src="img/Layer 37 copy 8.png" width="73" height="2" alt="">
+        </div>
+        <h1 class="catalog-title-h">Магазин готовых шаблонов</h1>
 
+      </div>
+  </div>
+
+  <section class="catalog-category">
+    <div class="container">
+
+      <section class="catalog-filters">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+
+          <fieldset class="filter-item">
+            <legend class="name">Стоимость:</legend>
+
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min" tabindex="0"></div>
+                <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">
+                  от <input type="number" name="min-price" value="0">
+                </label>
+                <label class="max-price">
+                  до <input type="number" name="max-price" value="15000">
+                </label>
+
+          </fieldset>
+
+          <fieldset class="net-filter">
+            <legend class="name">Сетка:</legend>
+            <div><input class="radio-adaptive" type="radio" name="grid-type" value="adaptive" id="filter-adaptive"
+                checked>
+              <label for="filter-adaptive">Адаптивная</label></div>
+            <div><input class="radio-fixed" type="radio" name="grid-type" value="fixed" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label></div>
+            <div><input class="radio-rubber" type="radio" name="grid-type" value="rubber" id="filter-rubber">
+              <label for="filter-rubber">Резиновая</label></div>
+          </fieldset>
+
+          <fieldset class="characteristic-filter">
+            <legend class="name">Особенности:</legend>
+            <div><input class="characteristic" type="checkbox" name="slider" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label></div>
+            <div><input class="characteristic" type="checkbox" name="advantage" id="filter-advantage">
+              <label for="filter-advantage">Блок преимуществ</label></div>
+            <div><input class="characteristic" type="checkbox" name="news" id="filter-news" checked>
+              <label for="filter-news">Новости</label></div>
+            <div><input class="characteristic" type="checkbox" name="gallery" id="filter-gallery">
+              <label for="filter-gallery">Галерея</label></div>
+            <div><input class="characteristic" type="checkbox" name="basket" id="filter-basket">
+              <label for="filter-basket">Корзина</label></div>
+          </fieldset>
+
+          <button class="filter-button">Показать</button>
+        </form>
+
+      </section>
+
+      <section class="catalog-catalog">
+
+        <div class="flex-sort">
+          <div class="flex-sort-item">Сортировать:</div>
+          <div class="flex-sort-item2">По цене</div>
+          <div class="flex-sort-item2">По типу</div>
+          <div class="flex-sort-item2">По названию</div>
+          <div class="flex-sort-shape"><img src="/img/ShapeTrBlack.png" width="11" height="10" alt=""></div>
+          <div class="flex-sort-shape"><img src="/img/ShapeTrGray.png" width="11" height="10" alt=""></div>
+        </div>
+
+
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a class="catalog-picture" href="#">
+                <img src="img/ShapeBlack.png" width="360" height="40" alt="">
+                <img src="img/img-sedona.jpg" width="359" height="578" alt="Site-Sedona»">
+              </a>
+              <div class="catalog-modal">
+                <h3 class="catalog-modal-title">Sedona</h3>
+                <span class="catalog-modal-info">Информационный сайт для туристов</span>
+                <button class="catalog-modal-button">9&Tab;900&Tab;&#8381;</button>
+              </div>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a class="catalog-picture" href="#">
+                <img src="img/ShapeBlack.png" width="360" height="40" alt="">
+                <img src="img/img-pink.png" width="358" height="578" alt="Site-Pink">
+              </a>
+              <!--<div class="catalog-modal">
+                <h3 class="catalog-modal-title">Pink</h3>
+                <span class="catalog-modal-info">Информационный сайт для туристов</span>
+                <button class="catalog-modal-button">9&Tab;900&Tab;&#8381;</button>
+              </div>-->
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a class="catalog-picture" href="#">
+                <img src="img/ShapeBlack.png" width="360" height="40" alt="">
+                <img src="img/img-barbershop.png" width="358" height="578" alt="Borodinski">
+              </a>
+              <!--<div class="catalog-modal">
+                <h3 class="catalog-modal-title">Pink</h3>
+                <span class="catalog-modal-info">Информационный сайт для туристов</span>
+                <button class="catalog-modal-button">9&Tab;900&Tab;&#8381;</button>
+              </div>-->
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a class="catalog-picture" href="#">
+                <img src="img/ShapeBlack.png" width="360" height="40" alt="">
+                <img src="img/img-mishka 1.png" width="358" height="578" alt="Borodinski">
+              </a>
+              <!--<div class="catalog-modal">
+                <h3 class="catalog-modal-title">Pink</h3>
+                <span class="catalog-modal-info">Информационный сайт для туристов</span>
+                <button class="catalog-modal-button">9&Tab;900&Tab;&#8381;</button>
+              </div>-->
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a class="catalog-picture" href="#">
+                <img src="img/ShapeBlack.png" width="360" height="40" alt="">
+                <img src="img/img-aplus.png" width="358" height="578" alt="Aplus">
+              </a>
+              <!--<div class="catalog-modal">
+                <h3 class="catalog-modal-title">Pink</h3>
+                <span class="catalog-modal-info">Информационный сайт для туристов</span>
+                <button class="catalog-modal-button">9&Tab;900&Tab;&#8381;</button>
+              </div>-->
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-image">
+              <a class="catalog-picture" href="#">
+                <img src="img/ShapeBlack.png" width="360" height="40" alt="">
+                <img src="img/img-kvast.png" width="358" height="578" alt="Kvast">
+              </a>
+              <!--<div class="catalog-modal">
+                <h3 class="catalog-modal-title">Pink</h3>
+                <span class="catalog-modal-info">Информационный сайт для туристов</span>
+                <button class="catalog-modal-button">9&Tab;900&Tab;&#8381;</button>
+              </div>-->
+            </div>
+          </li>
+        </ul>
+
+      </section>
+    </div>
+
+    <!--
+    <ul class="pagination-list">
+      <li class="pagination-item-active"><a href="#">1</a></li>
+      <li class="pagination-item"><a>2</a></li>
+      <li class="pagination-item"><a href="#">3</a></li>
+      <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
+    </ul>-->
+
+
+    <div class="pagination">
+      <button class="pagination-button-1">1</button>
+      <button class="pagination-button">2</button>
+      <button class="pagination-button">3</button>
+      <button class="pagination-button-next">Следующая</button>
+    </div>
   </section>
 
-  <section>
-    <h2 class="page-title-middle">ОСОБЕННОСТИ:</h2>
-     <ul>
-       <li>Слайдер</li>
-       <li>Блок преимуществ</li>
-       <li>Новости</li>
-       <li>Галерея</li>
-       <li>Корзина</li>
-       </ul>
-       <a class="button-grey" href="blank.html">ПОКАЗАТЬ</a>
+  <div class="our-contacts">
+    <div class="flex-contacts-left">
+      <h3 class="flex-contacts-title">NЁRDS DESIGN STUDIO</h3>
+      <p class="flex-contacts-address">191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br>
+        <br> тел. <a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a></p>
+      <button type="submit" class="flex-contacts-button">Напишите нам</button>
+    </div>
+    <div class="flex-contacts-right">
+      <img src="img/map-marker.png" width="231" height="190" alt="Map marker">
+    </div>
+  </div>
 
-  </section>
+  </main>
 
-  <section>
-    <h2>Шаблоны</h2>
-    <ul>
-      <li>
-        <a href="product.html">
-          <p>
-            <img src="img/sedona.jpg" width="358" height="576" alt="Информационный сайт для туристов Sedona">
-          </p>
-        </a>
-        <p>
-          9 900 ₽
-        </p>
-      </li>
-
-      <li>
-        <a href="product.html">
-          <p>
-            <img src="img/pink.png" width="358" height="576" alt="Приложение PINK">
-          </p>
-        </a>
-      </li>
-
-      <li>
-        <a href="product.html">
-          <p>
-            <img src="img/barbershop.jpg" width="364" height="582" alt="Сайт барбершопа Borodinski">
-          </p>
-        </a>
-      </li>
-      
-      <li>
-        <a href="product.html">
-          <p>
-            <img src="img/mishka.jpg" width="358" height="574" alt="Сайт магазина товаров ручной работы Mishka">
-          </p>
-        </a>
-      </li>
-
-      <li>
-        <a href="product.html">
-          <p>
-            <img src="img/aplus.jpg" width="358" height="572" alt="Сайт Обучение">
-          </p>
-        </a>
-      </li>
-
-      <li>
-        <a href="product.html">
-          <p>
-            <img src="img/kvast.jpg" width="358" height="574" alt="Сайт Крафтовый квас Kvast">
-          </p>
-        </a>
-      </li>
-    </ul>
-
-    <ul>
-      <li>
-        <a>1</a>
-      </li>
-            <li>
-        <a href="#">2</a>
-      </li>
-      <li>
-        <a href="#">3</a>
-      </li>
-      <li>
-        <a href="#">СЛЕДУЮЩАЯ</a>
-      </li>
-    </ul>
-  </section>
-</main>
-<footer class="page-footer main-footer">
-  <section class="footer-contacts">
-     <figure>
-         <a><img src="img/map.png" width="1440" height="416" alt="Map"></a>
-       <a><img src="img/map-marker.png" width="231" height="190" alt="Map marker"></a>
-       <!-- Здесь будет карта -->
-     </figure>
-      <h2>NЁRDS DESIGN STUDIO</h2>
-      <p class="address"> 191186, Санкт-Петербург,
-       ул. Б. Конюшенная, д. 19/8
-       тел. <a class="contacts-phone" href="tel:+78122757575">+7(812)275-75-75</a></p>
-      <a class="button-red" href="blank.html">НАПИШИТЕ НАМ</a>
-  </section>
-  <section class="footer-social">
-    <ul>
-        <li><a class="social-button" href="#">Вконтакте</a></li>
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-      </ul>
-      <p><b>Давайте дружить, это выгодно!</b></p>
+  <footer class="main-footer">
+    <div class="flex-footer-social">
+      <button class="social-button"><img src="img/shape_vk.png"></button>
+      <button class="social-button"><img src="img/Shape_f.png"></button>
+      <button class="social-button"><img src="img/Shape_insta.png"></button>
+    </div>
+    <div class="flex-friend">
+      <h2 class="friend">Давайте дружить, это выгодно!</h2>
       <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-  </section>
+    </div>
   </footer>
+
+
+
+
+  <!-- <div class="flex-footer-social">
+
+      <a class="social-button" href="#">
+        <img src="img/Shape 2 copy 3.svg" width="81" height="81" alt="Вконтакте">
+      </a>
+      <a class="social-button" href="#">
+        <img src="img/Shape 2 copy 4.svg" width="81" height="81" alt="Фейсбук">
+      </a>
+      <a class="social-button" href="#">
+        <img src="img/Shape 2 copy 5.svg" width="81" height="81" alt="Инстаграм">
+      </a>
+    </div>
+    <div class="flex-friend">
+      <h2 class="friend">Давайте дружить, это выгодно!</h2>
+      <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+    
+  </footer>-->
+
 </body>
+
 </html>
