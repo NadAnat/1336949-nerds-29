@@ -376,6 +376,9 @@ Services presentation*/
   margin: 0;
   margin-bottom: 73px;
 }
+.features-item {
+  list-style-image: url("../img/Rectangle\ 10.png");
+}
 
 /*about-us*/
 .about-us {
